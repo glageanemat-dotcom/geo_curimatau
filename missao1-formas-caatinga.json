@@ -1,0 +1,602 @@
+{
+  "metadata": {
+    "game": "GeoCurimatau",
+    "missionId": "M1",
+    "missionName": "Formas da Caatinga",
+    "version": "1.0.0",
+    "grades": [
+      6,
+      7,
+      8
+    ],
+    "language": "pt-BR",
+    "topics": [
+      "reconhecimento_de_figuras",
+      "poligonos",
+      "lados_e_vertices",
+      "triangulos",
+      "quadrilateros",
+      "classificacao",
+      "composicao_e_decomposicao"
+    ]
+  },
+  "settings": {
+    "allowRetry": true,
+    "losePointsOnError": false,
+    "showHints": true,
+    "maxHints": 3,
+    "audioFeedback": true,
+    "randomizeOptions": true
+  },
+  "activities": [
+    {
+      "id": "M1-6-001",
+      "grade": 6,
+      "stage": "explore",
+      "topic": "reconhecimento_de_figuras",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "sceneObject": "janela_casa",
+      "instruction": "Observe a forma usada para representar a janela da casa. Qual figura geométrica ela representa?",
+      "options": [
+        "Triângulo",
+        "Quadrado",
+        "Círculo",
+        "Pentágono"
+      ],
+      "correctAnswer": "Quadrado",
+      "hints": [
+        "Conte quantos lados a figura possui.",
+        "Observe se os quatro lados possuem a mesma medida na representação.",
+        "A figura possui quatro lados e quatro vértices."
+      ],
+      "feedback": {
+        "correct": "Muito bem! A janela foi representada por um quadrado. O quadrado possui quatro lados e quatro vértices.",
+        "incorrect1": "Observe novamente a figura. Conte seus lados antes de responder.",
+        "incorrect2": "Você está perto! Compare o comprimento dos quatro lados.",
+        "incorrect3": "A figura representada possui quatro lados de mesma medida. Ela é um quadrado."
+      },
+      "points": 50
+    },
+    {
+      "id": "M1-6-002",
+      "grade": 6,
+      "stage": "explore",
+      "topic": "lados_e_vertices",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "sceneObject": "telhado_casa",
+      "instruction": "A forma usada para representar o telhado possui três lados. Quantos vértices ela possui?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "3",
+      "hints": [
+        "Um vértice aparece no encontro entre dois lados.",
+        "Observe os três cantos da figura."
+      ],
+      "feedback": {
+        "correct": "Correto! Um triângulo possui três lados e três vértices.",
+        "incorrect1": "Procure os pontos onde dois lados se encontram.",
+        "incorrect2": "Conte os três cantos da figura. Cada canto corresponde a um vértice."
+      },
+      "points": 50
+    },
+    {
+      "id": "M1-6-003",
+      "grade": 6,
+      "stage": "find_shapes",
+      "topic": "poligonos",
+      "difficulty": "easy",
+      "type": "select-object",
+      "instruction": "Encontre na paisagem uma representação formada por três segmentos de reta.",
+      "validTargets": [
+        "telhado_casa",
+        "serra_geometrica"
+      ],
+      "conceptAnswer": "Triângulo",
+      "hints": [
+        "Procure uma figura com três lados.",
+        "Observe o telhado da casa."
+      ],
+      "feedback": {
+        "correct": "Excelente! A figura selecionada pode ser modelada por um triângulo, pois possui três lados.",
+        "incorrect1": "Essa representação não possui três lados. Observe outra região da paisagem.",
+        "incorrect2": "Procure uma forma triangular na composição da paisagem."
+      },
+      "points": 50
+    },
+    {
+      "id": "M1-6-004",
+      "grade": 6,
+      "stage": "rebuild",
+      "topic": "reconhecimento_de_figuras",
+      "difficulty": "easy",
+      "type": "drag-drop",
+      "instruction": "Arraste a peça triangular para o espaço correspondente na construção.",
+      "draggable": "triangle_piece",
+      "correctTarget": "roof_slot",
+      "hints": [
+        "Compare o contorno da peça com os espaços disponíveis.",
+        "O telhado possui um contorno com três lados."
+      ],
+      "feedback": {
+        "correct": "Ótimo encaixe! Você utilizou um triângulo para completar a representação do telhado.",
+        "incorrect1": "Ainda não. Compare a quantidade de lados da peça com o espaço escolhido.",
+        "incorrect2": "A peça possui três lados. Procure um espaço também triangular."
+      },
+      "points": 100
+    },
+    {
+      "id": "M1-6-005",
+      "grade": 6,
+      "stage": "classification",
+      "topic": "poligonos",
+      "difficulty": "medium",
+      "type": "drag-classification",
+      "instruction": "Separe as figuras em POLÍGONOS e NÃO POLÍGONOS.",
+      "objects": [
+        {
+          "id": "triangle",
+          "category": "Polígonos"
+        },
+        {
+          "id": "square",
+          "category": "Polígonos"
+        },
+        {
+          "id": "rectangle",
+          "category": "Polígonos"
+        },
+        {
+          "id": "circle",
+          "category": "Não polígonos"
+        },
+        {
+          "id": "hexagon",
+          "category": "Polígonos"
+        }
+      ],
+      "categories": [
+        "Polígonos",
+        "Não polígonos"
+      ],
+      "hints": [
+        "Observe se a figura é fechada e formada somente por segmentos de reta.",
+        "O círculo possui uma linha curva."
+      ],
+      "feedback": {
+        "correct": "Excelente! Polígonos são figuras planas fechadas formadas por segmentos de reta.",
+        "incorrect1": "Observe se existem linhas curvas na figura.",
+        "incorrect2": "O círculo não é um polígono porque sua borda não é formada por segmentos de reta."
+      },
+      "points": 150
+    },
+    {
+      "id": "M1-6-006",
+      "grade": 6,
+      "stage": "final_challenge",
+      "topic": "poligonos",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "instruction": "Uma figura fechada possui cinco lados formados por segmentos de reta. Como ela é chamada?",
+      "options": [
+        "Triângulo",
+        "Quadrilátero",
+        "Pentágono",
+        "Hexágono"
+      ],
+      "correctAnswer": "Pentágono",
+      "hints": [
+        "O prefixo 'penta' está relacionado ao número cinco.",
+        "Conte os lados da figura."
+      ],
+      "feedback": {
+        "correct": "Correto! Um polígono de cinco lados é chamado de pentágono.",
+        "incorrect1": "Relacione a quantidade de lados ao nome do polígono.",
+        "incorrect2": "Cinco lados correspondem a um pentágono."
+      },
+      "points": 100
+    },
+    {
+      "id": "M1-7-001",
+      "grade": 7,
+      "stage": "explore",
+      "topic": "quadrilateros",
+      "difficulty": "easy",
+      "type": "multiple-choice",
+      "instruction": "Quadrado, retângulo e trapézio pertencem a qual grupo de polígonos?",
+      "options": [
+        "Triângulos",
+        "Quadriláteros",
+        "Pentágonos",
+        "Hexágonos"
+      ],
+      "correctAnswer": "Quadriláteros",
+      "hints": [
+        "Conte os lados de cada uma dessas figuras.",
+        "Todas possuem quatro lados."
+      ],
+      "feedback": {
+        "correct": "Excelente! Quadrado, retângulo e trapézio são quadriláteros porque possuem quatro lados.",
+        "incorrect1": "Não observe apenas o formato. Procure uma característica comum às três figuras.",
+        "incorrect2": "As três possuem quatro lados; portanto, pertencem ao grupo dos quadriláteros."
+      },
+      "points": 75
+    },
+    {
+      "id": "M1-7-002",
+      "grade": 7,
+      "stage": "explore",
+      "topic": "triangulos",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "instruction": "Um triângulo representado no cenário possui três lados com medidas diferentes. Como ele é classificado quanto aos lados?",
+      "options": [
+        "Equilátero",
+        "Isósceles",
+        "Escaleno",
+        "Retângulo"
+      ],
+      "correctAnswer": "Escaleno",
+      "hints": [
+        "Compare as medidas dos três lados.",
+        "O triângulo escaleno possui três lados com medidas diferentes."
+      ],
+      "feedback": {
+        "correct": "Correto! Um triângulo com três lados de medidas diferentes é classificado como escaleno.",
+        "incorrect1": "Observe a relação entre as medidas dos três lados.",
+        "incorrect2": "Três lados diferentes caracterizam um triângulo escaleno."
+      },
+      "points": 100
+    },
+    {
+      "id": "M1-7-003",
+      "grade": 7,
+      "stage": "find_shapes",
+      "topic": "quadrilateros",
+      "difficulty": "medium",
+      "type": "select-multiple",
+      "instruction": "Selecione todas as peças que pertencem à família dos quadriláteros.",
+      "objects": [
+        "triangle",
+        "square",
+        "rectangle",
+        "trapezoid",
+        "pentagon",
+        "circle"
+      ],
+      "correctAnswers": [
+        "square",
+        "rectangle",
+        "trapezoid"
+      ],
+      "hints": [
+        "Quadriláteros possuem quatro lados.",
+        "Conte os segmentos de reta de cada figura."
+      ],
+      "feedback": {
+        "correct": "Muito bem! Quadrado, retângulo e trapézio possuem quatro lados e, portanto, são quadriláteros.",
+        "incorrect1": "Revise as figuras selecionadas e conte seus lados.",
+        "incorrect2": "Procure somente figuras com quatro lados."
+      },
+      "points": 125
+    },
+    {
+      "id": "M1-7-004",
+      "grade": 7,
+      "stage": "classification",
+      "topic": "triangulos",
+      "difficulty": "medium",
+      "type": "drag-classification",
+      "instruction": "Classifique os triângulos de acordo com as medidas de seus lados.",
+      "objects": [
+        {
+          "id": "triangle_A",
+          "sideMeasures": [
+            5,
+            5,
+            5
+          ],
+          "category": "Equilátero"
+        },
+        {
+          "id": "triangle_B",
+          "sideMeasures": [
+            5,
+            5,
+            7
+          ],
+          "category": "Isósceles"
+        },
+        {
+          "id": "triangle_C",
+          "sideMeasures": [
+            4,
+            5,
+            6
+          ],
+          "category": "Escaleno"
+        }
+      ],
+      "categories": [
+        "Equilátero",
+        "Isósceles",
+        "Escaleno"
+      ],
+      "hints": [
+        "Compare as três medidas apresentadas.",
+        "Três iguais: equilátero. Pelo menos duas iguais: isósceles. Três diferentes: escaleno."
+      ],
+      "feedback": {
+        "correct": "Excelente classificação! Você comparou corretamente as medidas dos lados.",
+        "incorrect1": "Compare novamente as medidas antes de classificar.",
+        "incorrect2": "Observe quantos lados possuem a mesma medida."
+      },
+      "points": 175
+    },
+    {
+      "id": "M1-7-005",
+      "grade": 7,
+      "stage": "final_challenge",
+      "topic": "classificacao",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "instruction": "Um estudante afirma: 'Todo quadrado é um quadrilátero'. A afirmação está correta?",
+      "options": [
+        "Sim",
+        "Não"
+      ],
+      "correctAnswer": "Sim",
+      "hints": [
+        "Pense na definição de quadrilátero.",
+        "Quantos lados possui um quadrado?"
+      ],
+      "feedback": {
+        "correct": "Isso mesmo! Todo quadrado possui quatro lados e, portanto, pertence à classe dos quadriláteros.",
+        "incorrect1": "Observe que pertencer a uma classe mais ampla não elimina as características específicas da figura.",
+        "incorrect2": "Como possui quatro lados, todo quadrado é também um quadrilátero."
+      },
+      "points": 175
+    },
+    {
+      "id": "M1-7-006",
+      "grade": 7,
+      "stage": "final_challenge",
+      "topic": "composicao_e_decomposicao",
+      "difficulty": "hard",
+      "type": "assemble-shape",
+      "instruction": "Utilize dois triângulos compatíveis para construir um quadrilátero.",
+      "availablePieces": [
+        "triangle_1",
+        "triangle_2",
+        "triangle_3",
+        "triangle_4"
+      ],
+      "acceptedResults": [
+        "rectangle",
+        "parallelogram",
+        "square"
+      ],
+      "hints": [
+        "Experimente aproximar lados de mesmo comprimento.",
+        "Gire as peças e procure formar um contorno com quatro lados."
+      ],
+      "feedback": {
+        "correct": "Excelente! Figuras geométricas podem ser compostas e decompostas. Dois triângulos adequados podem formar determinados quadriláteros.",
+        "incorrect1": "Experimente girar uma das peças.",
+        "incorrect2": "Tente unir lados compatíveis para que o contorno externo tenha quatro lados."
+      },
+      "points": 200
+    },
+    {
+      "id": "M1-8-001",
+      "grade": 8,
+      "stage": "explore",
+      "topic": "classificacao",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "instruction": "Qual relação entre quadrado e retângulo é matematicamente correta?",
+      "options": [
+        "Nenhum quadrado é retângulo.",
+        "Todo retângulo é quadrado.",
+        "Todo quadrado é um retângulo.",
+        "Quadrados não são quadriláteros."
+      ],
+      "correctAnswer": "Todo quadrado é um retângulo.",
+      "hints": [
+        "Compare os ângulos das duas figuras.",
+        "Um retângulo é um quadrilátero com quatro ângulos retos."
+      ],
+      "feedback": {
+        "correct": "Muito bem! Pela definição inclusiva, todo quadrado possui quatro ângulos retos e satisfaz as propriedades de um retângulo, além de possuir quatro lados de mesma medida.",
+        "incorrect1": "Compare as propriedades necessárias para uma figura ser um retângulo.",
+        "incorrect2": "O quadrado possui quatro ângulos retos; portanto, satisfaz a definição de retângulo."
+      },
+      "points": 125
+    },
+    {
+      "id": "M1-8-002",
+      "grade": 8,
+      "stage": "explore",
+      "topic": "classificacao",
+      "difficulty": "medium",
+      "type": "multiple-choice",
+      "instruction": "Qual propriedade é comum ao quadrado, ao retângulo e ao trapézio apresentados no jogo?",
+      "options": [
+        "Todos possuem quatro lados.",
+        "Todos possuem quatro lados de mesma medida.",
+        "Todos possuem quatro ângulos retos.",
+        "Todos são triângulos."
+      ],
+      "correctAnswer": "Todos possuem quatro lados.",
+      "hints": [
+        "Procure a propriedade mais geral.",
+        "As três figuras pertencem à família dos quadriláteros."
+      ],
+      "feedback": {
+        "correct": "Correto! A propriedade comum é possuir quatro lados. Por isso, as três figuras são quadriláteros.",
+        "incorrect1": "Algumas propriedades pertencem apenas a determinadas figuras.",
+        "incorrect2": "Procure uma característica que esteja presente nas três figuras."
+      },
+      "points": 125
+    },
+    {
+      "id": "M1-8-003",
+      "grade": 8,
+      "stage": "find_shapes",
+      "topic": "composicao_e_decomposicao",
+      "difficulty": "medium",
+      "type": "select-object",
+      "instruction": "Selecione na composição uma figura que possa ser dividida por uma diagonal em dois triângulos.",
+      "validTargets": [
+        "square_window",
+        "rectangle_door",
+        "trapezoid_plot"
+      ],
+      "conceptAnswer": "Quadrilátero",
+      "hints": [
+        "Uma diagonal pode ligar dois vértices não consecutivos.",
+        "Observe os quadriláteros presentes na composição."
+      ],
+      "feedback": {
+        "correct": "Muito bem! Ao traçar uma diagonal adequada em um quadrilátero simples, podemos decompô-lo em dois triângulos.",
+        "incorrect1": "Procure uma figura com quatro lados.",
+        "incorrect2": "Escolha um dos quadriláteros presentes na composição."
+      },
+      "points": 150
+    },
+    {
+      "id": "M1-8-004",
+      "grade": 8,
+      "stage": "rebuild",
+      "topic": "composicao_e_decomposicao",
+      "difficulty": "medium",
+      "type": "assemble-shape",
+      "instruction": "Combine as peças triangulares disponíveis para produzir uma figura quadrilateral.",
+      "availablePieces": [
+        "right_triangle_A",
+        "right_triangle_B"
+      ],
+      "acceptedResults": [
+        "rectangle"
+      ],
+      "hints": [
+        "Observe os lados correspondentes.",
+        "Experimente unir as peças pelo lado inclinado."
+      ],
+      "feedback": {
+        "correct": "Excelente! A composição de dois triângulos adequados pode produzir um retângulo.",
+        "incorrect1": "Gire uma das peças e compare os lados.",
+        "incorrect2": "Experimente aproximar as hipotenusas das duas peças."
+      },
+      "points": 175
+    },
+    {
+      "id": "M1-8-005",
+      "grade": 8,
+      "stage": "classification",
+      "topic": "quadrilateros",
+      "difficulty": "hard",
+      "type": "select-multiple",
+      "instruction": "Selecione todas as afirmações verdadeiras sobre um quadrado.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Possui quatro lados.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Possui quatro ângulos retos.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Possui quatro lados de mesma medida.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Possui exatamente três vértices.",
+          "correct": false
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "hints": [
+        "Analise lados, vértices e ângulos separadamente.",
+        "Um quadrado possui quatro vértices."
+      ],
+      "feedback": {
+        "correct": "Excelente! Você reconheceu as principais propriedades do quadrado.",
+        "incorrect1": "Revise cada afirmação separadamente.",
+        "incorrect2": "Observe que o quadrado possui quatro lados, quatro vértices e quatro ângulos retos."
+      },
+      "points": 175
+    },
+    {
+      "id": "M1-8-006",
+      "grade": 8,
+      "stage": "final_challenge",
+      "topic": "classificacao",
+      "difficulty": "hard",
+      "type": "multiple-choice",
+      "instruction": "Se uma figura é um quadrado, qual conclusão pode ser feita com certeza?",
+      "options": [
+        "Ela é também um quadrilátero.",
+        "Ela possui três lados.",
+        "Ela não possui ângulos retos.",
+        "Ela é um círculo."
+      ],
+      "correctAnswer": "Ela é também um quadrilátero.",
+      "hints": [
+        "Considere a classificação hierárquica das figuras.",
+        "Quadriláteros são polígonos de quatro lados."
+      ],
+      "feedback": {
+        "correct": "Correto! Quadrado é uma classificação específica dentro do conjunto dos quadriláteros.",
+        "incorrect1": "Procure a classe mais ampla à qual o quadrado pertence.",
+        "incorrect2": "Como possui quatro lados, o quadrado pertence ao conjunto dos quadriláteros."
+      },
+      "points": 150
+    }
+  ],
+  "missionCompletion": {
+    "minimumActivities": {
+      "6": 6,
+      "7": 6,
+      "8": 6
+    },
+    "completionBonus": 300,
+    "medals": [
+      {
+        "id": "explorador_caatinga",
+        "name": "Explorador da Caatinga",
+        "icon": "medal_explorer",
+        "condition": "complete_mission",
+        "description": "Conclua a Missão 1."
+      },
+      {
+        "id": "olhar_geometrico",
+        "name": "Olhar Geométrico",
+        "icon": "medal_geometry",
+        "condition": "correct_identification_activities",
+        "description": "Conclua todas as atividades de identificação de formas."
+      },
+      {
+        "id": "construtor_curimatau",
+        "name": "Construtor do Curimataú",
+        "icon": "medal_builder",
+        "condition": "complete_rebuild_stage",
+        "description": "Reconstrua corretamente a paisagem geométrica."
+      }
+    ]
+  }
+}
